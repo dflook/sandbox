@@ -1,7 +1,7 @@
 name: Question
-description: I'm having trouble using these actions
+description: I'm having a problem using these actions
 title: "How do I...? "
-labels: ["question"]
+labels: ["problem"]
 body:
   - type: markdown
     attributes:
