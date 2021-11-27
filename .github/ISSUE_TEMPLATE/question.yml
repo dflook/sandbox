@@ -1,16 +1,16 @@
-name: Question
-description: I'm having a problem using these actions
-title: "How do I...? "
+name: Problem
+description: "I'm having a problem using these actions"
 labels: ["problem"]
 body:
   - type: markdown
     attributes:
       value: |
-        Before creating an issue, enable debug logging by setting the `ACTIONS_STEP_DEBUG` secret to `true` and try it again.
+        Before creating an issue, enable debug logging by setting the `ACTIONS_STEP_DEBUG` secret to `true` and run the job again.
 
   - type: textarea
     id: description
     attributes:
+      description: What is not working? What do you think should be happening instead?
       label: Problem description
     validations:
       required: true
@@ -40,6 +40,6 @@ body:
     id: workflow-logs
     attributes:
       label: Workflow log
-      description: Please copy and paste the relevant workflow log output. This will be automatically formatted, so no need for backticks.
+      description: Please copy and paste the relevant workflow log output. If this is long consider putting in a [gist](https://gist.github.com/). This will be automatically formatted, so no need for backticks.
       render: shell
 
